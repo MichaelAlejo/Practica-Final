@@ -1,0 +1,50 @@
+
+body {
+    background-color: lightgreen;
+}
+.encabezado {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: lightblue;
+    margin: 7px;
+    padding: 5px;
+
+}
+.quienes_somos {
+    font-family: Arial, sans-serif;
+    padding: 5px;
+    margin: 7px;
+    background-color: lightgray;
+    text-align: center;
+}
+.quienes_somos h1 {
+
+}
+
+.quienes_somos p {
+    
+}
+.nuestros_viajes {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+   
+}
+
+.nav-item{
+    text-align: center;
+    margin: 25px;
+   
+}
+
+.nav-link:hover{
+    color: rgb(234, 68, 68);
+}
+
+.nav-link{
+    color: white;
+}
