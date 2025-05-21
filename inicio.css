@@ -1,50 +1,75 @@
-
-body {
-    background-color: lightgreen;
-}
-.encabezado {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: lightblue;
-    margin: 7px;
-    padding: 5px;
-
-}
-.quienes_somos {
-    font-family: Arial, sans-serif;
-    padding: 5px;
-    margin: 7px;
-    background-color: lightgray;
-    text-align: center;
-}
-.quienes_somos h1 {
-
-}
-
-.quienes_somos p {
-    
-}
-.nuestros_viajes {
-    font-family: Arial, sans-serif;
-    text-align: center;
-}
-.nav-list {
+/* Reset bàsic */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  header {
+    background-color: #004466;
+    color: white;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav ul {
     list-style: none;
     display: flex;
-    justify-content: center;
-   
-}
-
-.nav-item{
-    text-align: center;
-    margin: 25px;
-   
-}
-
-.nav-link:hover{
-    color: rgb(234, 68, 68);
-}
-
-.nav-link{
+    gap: 1em;
+  }
+  
+  nav a {
     color: white;
-}
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: #ffcc00;
+  }
+  
+  .hero {
+    background-image: url('../img/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 5em 2em;
+    text-align: center;
+  }
+  
+  .destinacions, .serveis {
+    padding: 2em;
+  }
+  
+  .destinacions article {
+    margin-top: 1em;
+  }
+  
+  .destinacions img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+  }
+  
+  .destinacions img:hover {
+    transform: scale(1.05);
+  }
+  
+  footer {
+    background-color: #004466;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    margin-top: 2em;
+  }
+  
