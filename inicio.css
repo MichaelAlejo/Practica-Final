@@ -1,75 +1,113 @@
-/* Reset bàsic */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    background-color: #f9f9f9;
-    color: #333;
-  }
-  
-  header {
-    background-color: #004466;
-    color: white;
-    padding: 1em;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-    gap: 1em;
-  }
-  
-  nav a {
-    color: white;
-    text-decoration: none;
-    transition: color 0.3s;
-  }
-  
-  nav a:hover {
-    color: #ffcc00;
-  }
-  
-  .hero {
-    background-image: url('../img/hero.jpg');
-    background-size: cover;
-    background-position: center;
-    color: white;
-    padding: 5em 2em;
-    text-align: center;
-  }
-  
-  .destinacions, .serveis {
-    padding: 2em;
-  }
-  
-  .destinacions article {
-    margin-top: 1em;
-  }
-  
-  .destinacions img {
-    width: 100%;
-    max-width: 400px;
-    border-radius: 10px;
-    transition: transform 0.3s;
-  }
-  
-  .destinacions img:hover {
-    transform: scale(1.05);
-  }
-  
-  footer {
-    background-color: #004466;
-    color: white;
-    text-align: center;
-    padding: 1em;
-    margin-top: 2em;
-  }
-  
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+header {
+  background: linear-gradient(to right, #0077b6, #abc0c5);
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.empresa {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.eslogan {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+.logo-mini {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 65px;
+  height: auto;
+}
+
+nav {
+  background: linear-gradient(to right, #023e8a, #152c31)
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 7px;
+
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+
+}
+
+nav a:hover {
+  background: linear-gradient(to right, #0077b6, #a2b6bb)
+}
+
+nav a.efecto {
+  background-color: white;
+  color: #023e8a;
+  font-weight: bold;
+}
+
+main {
+  padding: 30px;
+  text-align: center;
+}
+
+.catalogo h2 {
+  font-size: 2rem;
+  color: #023e8a;
+  margin-bottom: 15px;
+}
+
+.catalogo p {
+  max-width: 600px;
+  margin: 0 auto 2rem auto;
+  font-size: 1rem;
+}
+
+.regiones {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.boton {
+  background-color: #0077b6;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.boton:hover {
+  background-color: #0096c7;
+  transform: translateY(-3px);
+}
+
+
+footer {
+  background-color: #e0e0e0;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 50px;
+  font-size: 16px;
+}
+
