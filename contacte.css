@@ -62,8 +62,12 @@ body {
     color: #023e8a;
     font-weight: bold;
   }
-
+  .texto {
+    margin: 20px 5px;
+  }
+  
   .contacto-item {
+    margin: 0px 5px;
     display: flex;
     align-items: center;
     margin-bottom: 15px;
