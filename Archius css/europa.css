@@ -85,9 +85,11 @@ body {
   .paises h3 {
     color: #2980b9;
     margin-bottom: 10px;
+    text-align: center;
   }
   
   .paises p {
+    text-align: center;
     font-size: 1rem;
     line-height: 1.5;
     color: #444;
