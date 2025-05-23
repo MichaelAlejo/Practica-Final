@@ -1,0 +1,109 @@
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <title>Aereonova - Inici</title>
+  <link rel="stylesheet" href="css/america.css">
+
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 class="empresa">Aereonova</h1>
+      <p class="eslogan">Explora el món amb nosaltres</p>
+      <img src="images/logotipo.png" alt="Logo Aereonova" class="logo-mini">
+    </div>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html" >Inici</a></li>
+      <li><a href="qui-som.html">Qui som</a></li>
+      <li><a href="contacte.html">Contacte</a></li>
+      <li><a href="europa.html" >Viatges Europa</a></li>
+      <li><a href="america.html"class="efecto">Viatges America</a></li>
+      <li><a href="asia.html">Viatges Asia</a></li>
+    </ul>
+</nav>
+
+<div class="destins-america">
+  <h2>Destins Amèrica</h2>
+  
+  <div class="paises">
+    <h3>Estats Units</h3>
+    <p>Descobreix la diversitat cultural, paisatges impressionants i la vibrant vida urbana dels Estats Units.</p>
+    <div class="imagenes">
+      <img src="images/images_america/Nueva_York.jpg" alt="Nova York" class="active">
+      <img src="images/images_america/hawai.jpg" alt="Hawai">
+      <img src="images/images_america/Gran cañon.jpg" alt="Gran Canyó">
+    </div>
+  </div>
+
+  <div class="paises">
+    <h3>Mèxic</h3>
+    <p>Explora les ruïnes maies, platges exòtiques i una gastronomia rica en història i sabor a Mèxic.</p>
+    <div class="imagenes">
+      <img src="images/images_america/Chichen_Itza.jpg" alt="Chichen Itzá" class="active">
+      <img src="images/images_america/CDMX.jpeg" alt="Ciutat de Mèxic">
+      <img src="images/images_america/Cancun.jpeg" alt="Cancún">
+    </div>
+  </div>
+
+  <div class="paises">
+    <h3>República Dominicana</h3>
+    <p>Gaudeix de les seves meravelloses platges, la seva cultura vibrant i la seva hospitalitat a la República Dominicana.</p>
+    <div class="imagenes">
+      <img src="images/images_america/santo domingo.jpeg" alt="Santo Domingo" class="active">
+      <img src="images/images_america/salto el limon.jpg" alt="Salt el Llimó">
+      <img src="images/images_america/punta cana.jpeg" alt="Punta Cana">
+    </div>
+  </div>
+
+  <div class="paises">
+    <h3>El Salvador</h3>
+    <p>Admira la bellesa natural, les platges i els volcans a El Salvador.</p>
+    <div class="imagenes">
+      <img src="" alt="" class="active">
+      <img src="" alt="">
+      <img src="" alt="">
+    </div>
+  </div>
+
+  <div class="paises">
+    <h3>Argentina</h3>
+    <p>Viu l'emoció del tango, els paisatges de la Patagònia i la rica gastronomia argentina.</p>
+    <div class="imagenes">
+      <img src="" alt="" class="active">
+      <img src="" alt="">
+      <img src="" alt="">
+    </div>
+  </div>
+
+  <div class="paises">
+    <h3>Brasil</h3>
+    <p>Gaudeix de les platges de Río, l'Amazones i la vibrant vida cultural de Brasil.</p>
+    <div class="imagenes">
+      <img src="" alt="" class="active">
+      <img src="" alt="">
+      <img src="" alt="">
+    </div>
+  </div>
+</div>
+
+    <footer>
+        <p>&copy; 2025 Aereonova. Tots els drets reservats.</p>
+      </footer>
+            <script>
+        document.querySelectorAll('.imagenes').forEach(imagenes => {
+          const images = imagenes.querySelectorAll('img');
+          let current = 0;
+      
+          setInterval(() => {
+            images[current].classList.remove('active');
+            current = (current + 1) % images.length;
+            images[current].classList.add('active');
+          }, 3500);
+        });
+      </script> 
+    </body>
+    </body>
+    </html>
