@@ -24,12 +24,86 @@
       <li><a href="asia.html">Viatges Asia</a></li>
     </ul>
 </nav>
+<div class="destins-europa">
+  <h2>Destins a Europa</h2>
 
+  <div class="paises">
+    <h3>Espanya</h3>
+    <p>Descobreix la rica història, la cultura vibrant i les platges impressionants d’Espanya.</p>
+    <div class="imagenes">
+      <img src="images_europa/sagradafamilia.jpg" alt="Sagrada Familia" class="active">
+      <img src="images_europa/güell.jpg" alt="Parque Güell">
+      <img src="images_europa/picoseuropa.jpg" alt="Espanya 3">
+    </div>
+  </div>
 
+  <div class="paises">
+    <h3>Noruega</h3>
+    <p>Admira els espectaculars fiords, les aurores boreals i la natura salvatge de Noruega.</p>
+    <div class="imagenes">
+      <img src="" alt="Noruega 1" class="active">
+      <img src="" alt="Noruega 2">
+      <img src="" alt="Noruega 3">
+    </div>
+  </div>
 
+  <div class="paises">
+    <h3>Alemanya</h3>
+    <p>Explora castells medievals, ciutats modernes i la famosa ruta del vi a Alemanya.</p>
+    <div class="imagenes">
+      <img src="" alt="Alemanya 1" class="active">
+      <img src="" alt="Alemanya 2">
+      <img src="" alt="Alemanya 3">
+    </div>
+  </div>
+
+  <div class="paises">
+    <h3>Itàlia</h3>
+    <p>Gaudeix de l’art renaixentista, la cuina deliciosa i paisatges mediterranis únics a Itàlia.</p>
+    <div class="imagenes">
+      <img src="" alt="Itàlia 1" class="active">
+      <img src="" alt="Itàlia 2">
+      <img src="" alt="Itàlia 3">
+    </div>
+  </div>
+
+  <div class="paises">
+    <h3>Portugal</h3>
+    <p>Visita ciutats històriques, platges espectaculars i prova els vins reconeguts a Portugal.</p>
+    <div class="imagenes">
+      <img src="" alt="Portugal 1" class="active">
+      <img src="" alt="Portugal 2">
+      <img src="" alt="Portugal 3">
+    </div>
+  </div>
+
+  <div class="paises">
+    <h3>Grècia</h3>
+    <p>Descobreix l’antiga història, illes paradisíaques i una gastronomia exquisida a Grècia.</p>
+    <div class="imagenes">
+      <img src="" alt="Grècia 1" class="active">
+      <img src="" alt="Grècia 2">
+      <img src="" alt="Grècia 3">
+    </div>
+  </div>
+</div>
 
     <footer>
-        <p>&copy; 2025 Aereonova. Tots els drets reservats.a</p>
+        <p>&copy; 2025 Aereonova. Tots els drets reservats.</p>
       </footer>
+
+      <script>
+        document.querySelectorAll('.imagenes').forEach(imagenes => {
+          const images = imagenes.querySelectorAll('img');
+          let current = 0;
+      
+          setInterval(() => {
+            images[current].classList.remove('active');
+            current = (current + 1) % images.length;
+            images[current].classList.add('active');
+          }, 3500);
+        });
+      </script>      
+  </script>
     </body>
     </html>
