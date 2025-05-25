@@ -6,7 +6,7 @@
   
 - Pàgina principal (index.html): Aquesta es la pagina d'inici de la meva web on trobaras una barra de navegació i botons per anar a altres pagines.
 - Pàgina de contacte (contacte.html): Aqui trobaras les maneras que hi ha de contactar amb l'empresa en cas que vugluis saber alguna cosa
--Pàgina "Qui som" (qui-som.html): Aqui trobaras informacio sobre que es la nostra empresa, y qui la va fundar.
+- Pàgina "Qui som" (qui-som.html): Aqui trobaras informacio sobre que es la nostra empresa, y qui la va fundar.
 - Y despres estan les pagines de les regions en las que ofreim viatges que son:
   1. europa.html: Aqui son tots els viatges que hi ha a Europa.
   2. asia.html: Aqui son tots els viatges que hi ha a America.
