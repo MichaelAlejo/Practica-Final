@@ -5,6 +5,31 @@ body {
     background-color: #f9f9f9;
     color: #333;
   }
+  @media (max-width: 1024px) {
+  body {
+    font-size: 16px;
+  }
+  nav {
+    flex-direction: column;
+  }
+  .galeria {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Ajustes para pantallas pequeñas (móviles) */
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+  .galeria {
+    grid-template-columns: 1fr;
+  }
+  nav {
+    font-size: 14px;
+  }
+}
+
   
   header {
     background: linear-gradient(to right, #0077b6, #abc0c5);
