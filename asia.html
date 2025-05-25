@@ -1,10 +1,12 @@
 <html lang="ca">
+
 <head>
   <meta charset="UTF-8">
   <title>Aereonova - Inici</title>
   <link rel="stylesheet" href="css/asia.css">
 
 </head>
+
 <body>
   <header>
     <div class="container">
@@ -16,81 +18,84 @@
 
   <nav>
     <ul>
-      <li><a href="index.html" >Inici</a></li>
+      <li><a href="index.html">Inici</a></li>
       <li><a href="qui-som.html">Qui som</a></li>
       <li><a href="contacte.html">Contacte</a></li>
-      <li><a href="europa.html" >Viatges Europa</a></li>
+      <li><a href="europa.html">Viatges Europa</a></li>
       <li><a href="america.html">Viatges America</a></li>
-      <li><a href="asia.html"class="efecto">Viatges Asia</a></li>
+      <li><a href="asia.html" class="efecto">Viatges Asia</a></li>
     </ul>
-</nav>
+  </nav>
 
-<div class="destins-asia">
-  <h2>Destins Àsia</h2>
-  
-  <div class="paises">
-    <h3>Japó</h3>
-    <p>Descobreix la rica cultura, els temples antics i els paisatges únics del Japó.</p>
-    <div class="imagenes">
-      <img src="images/images_asia/tokio.jpeg" alt="Tòkio" class="active">
-      <img src="images/images_asia/kyoto.jpeg" alt="Kyoto">
-      <img src="images/images_asia/monte-fuji.jpeg" alt="Mont Fuji">
+  <div class="destins-asia">
+    <h2>Destins Àsia</h2>
+
+    <div class="paises">
+      <h3>Japó</h3>
+      <p>Descobreix la rica cultura, els temples antics i els paisatges únics del Japó.</p>
+      <div class="imagenes">
+        <img src="images/images_asia/tokio.jpeg" alt="Tòkio" class="active">
+        <img src="images/images_asia/kyoto.jpeg" alt="Kyoto">
+        <img src="images/images_asia/monte-fuji.jpeg" alt="Mont Fuji">
+      </div>
+    </div>
+
+    <div class="paises">
+      <h3>Tailàndia</h3>
+      <p>Explora les platges paradisíaques, els temples budistes i la vibranta cultura tailandesa.</p>
+      <div class="imagenes">
+        <img src="images/images_asia/bangkok.jpeg" alt="Bangkok" class="active">
+        <img src="images/images_asia/phuket.jpeg" alt="Phuket">
+        <img src="images/images_asia/chiang-mai.jpg" alt="Chiang Mai">
+      </div>
+    </div>
+
+    <div class="paises">
+      <h3>Xina</h3>
+      <p>Viu l'emoció de les Muralles de la Xina, la ciutat prohibida i els paisatges naturals impressionants.</p>
+      <div class="imagenes">
+        <img src="images/images_asia/beijing.jpeg" alt="Pequín" class="active">
+        <img src="images/images_asia/guilin.jpeg" alt="Guilin">
+        <img src="images/images_asia/xian.jpeg" alt="Xi'an">
+      </div>
+    </div>
+
+    <div class="paises">
+      <h3>Corea del sud</h3>
+      <p>Explora les modernes ciutats, els palaus imperials i les belles muntanyes de Corea del Sud.</p>
+      <div class="imagenes">
+        <img src="images/images_asia/seoul.jpeg" alt="Seoul" class="active">
+        <img src="images/images_asia/bukxhon.jpeg" alt="Bukchon">
+        <img src="images/images_asia/isla jeju.jpeg" alt="Isla Jeju">
+      </div>
+    </div>
+
+    <div class="paises">
+      <h3>Taiwan</h3>
+      <p>Descobreix els paisatges montanyosos, els temples tranquils i la gastronomia única de Taiwán.</p>
+      <div class="imagenes">
+        <img src="images/images_asia/taipei.jpg" alt="Taipei" class="active">
+        <img src="images/images_asia/yushan.jpeg" alt="Montañas de taiwan">
+        <img src="images/images_asia/longshan.jpg" alt="Templos de taiwan">
+      </div>
     </div>
   </div>
 
-  <div class="paises">
-    <h3>Tailàndia</h3>
-    <p>Explora les platges paradisíaques, els temples budistes i la vibranta cultura tailandesa.</p>
-    <div class="imagenes">
-      <img src="images/images_asia/bangkok.jpeg" alt="Bangkok" class="active">
-      <img src="images/images_asia/phuket.jpeg" alt="Phuket">
-      <img src="images/images_asia/chiang-mai.jpg" alt="Chiang Mai">
-    </div>
-  </div>
+  <footer>
+    <p>&copy; 2025 Aereonova. Tots els drets reservats.</p>
+  </footer>
+  <script>
+    document.querySelectorAll('.imagenes').forEach(imagenes => {
+      const images = imagenes.querySelectorAll('img');
+      let current = 0;
 
-  <div class="paises">
-    <h3>Xina</h3>
-    <p>Viu l'emoció de les Muralles de la Xina, la ciutat prohibida i els paisatges naturals impressionants.</p>
-    <div class="imagenes">
-      <img src="images/images_asia/beijing.jpeg" alt="Pequín" class="active">
-      <img src="images/images_asia/guilin.jpeg" alt="Guilin">
-      <img src="images/images_asia/xian.jpeg" alt="Xi'an">
-    </div>
-  </div>
+      setInterval(() => {
+        images[current].classList.remove('active');
+        current = (current + 1) % images.length;
+        images[current].classList.add('active');
+      }, 3500);
+    });
+  </script>
+</body>
 
-  <div class="paises">
-    <h3>Corea del sud</h3>
-    <p>Explora les modernes ciutats, els palaus imperials i les belles muntanyes de Corea del Sud.</p>    <div class="imagenes">
-      <img src="images/images_asia/seoul.jpeg" alt="Seoul" class="active">
-      <img src="images/images_asia/bukxhon.jpeg" alt="Bukchon">
-      <img src="images/images_asia/isla jeju.jpeg" alt="Isla Jeju">
-    </div>
-  </div>
-
-  <div class="paises">
-    <h3>Taiwan</h3>
-    <p>Descobreix els paisatges montanyosos, els temples tranquils i la gastronomia única de Taiwán.</p>    <div class="imagenes">
-      <img src="images/images_asia/taipei.jpg" alt="Taipei" class="active">
-      <img src="images/images_asia/yushan.jpeg" alt="Montañas de taiwan">
-      <img src="images/images_asia/longshan.jpg" alt="Templos de taiwan">
-    </div>
-  </div>
-</div>
-
-    <footer>
-        <p>&copy; 2025 Aereonova. Tots els drets reservats.</p>
-      </footer>
-      <script>
-        document.querySelectorAll('.imagenes').forEach(imagenes => {
-          const images = imagenes.querySelectorAll('img');
-          let current = 0;
-      
-          setInterval(() => {
-            images[current].classList.remove('active');
-            current = (current + 1) % images.length;
-            images[current].classList.add('active');
-          }, 3500);
-        });
-      </script> 
-    </body>
-    </html>
+</html>

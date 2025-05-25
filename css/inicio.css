@@ -5,30 +5,6 @@ body {
   background-color: #f9f9f9;
   color: #333;
 }
-@media (max-width: 1024px) {
-  body {
-    font-size: 16px;
-  }
-  nav {
-    flex-direction: column;
-  }
-  .galeria {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-/* Ajustes para pantallas pequeñas (móviles) */
-@media (max-width: 600px) {
-  body {
-    font-size: 14px;
-  }
-  .galeria {
-    grid-template-columns: 1fr;
-  }
-  nav {
-    font-size: 14px;
-  }
-}
 
 header {
   background: linear-gradient(to right, #0077b6, #abc0c5);
@@ -37,16 +13,16 @@ header {
   text-align: center;
 }
 
-  .empresa {
-    margin: 0;
-    font-size: 40px;
-    font-weight: 700;
-  }
-  
-  .eslogan {
-    font-size: 18px;
-    margin-top: 7px;
-  }
+.empresa {
+  margin: 0;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.eslogan {
+  font-size: 18px;
+  margin-top: 7px;
+}
 
 .logo-mini {
   position: absolute;
@@ -56,40 +32,41 @@ header {
   height: auto;
 }
 
-  nav {
-    background: linear-gradient(to right, #023e8a, #152c31)
-  }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 7px;
-  
-  }
-  
-  nav a {
-    color: white;
-    text-decoration: none;
-    padding: 7px 20px;
-    border-radius: 5px;
-    transition: background-color 0.6s ease;
-  }
-  
-  nav a:hover {
-    background: linear-gradient(to right, #0077b6, #a2b6bb)
-  }
-  
-  nav a.efecto {
-    background-color: white;
-    color: #023e8a;
-    font-weight: bold;
-  }
-  main {
-    padding: 30px;
-    text-align: center;
-  }
+nav {
+  background: linear-gradient(to right, #023e8a, #152c31)
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 7px;
+
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 7px 20px;
+  border-radius: 5px;
+  transition: background-color 0.6s ease;
+}
+
+nav a:hover {
+  background: linear-gradient(to right, #0077b6, #a2b6bb)
+}
+
+nav a.efecto {
+  background-color: white;
+  color: #023e8a;
+  font-weight: bold;
+}
+
+main {
+  padding: 30px;
+  text-align: center;
+}
 
 .catalogo h2 {
   font-size: 32px;
@@ -134,3 +111,14 @@ footer {
   font-size: 16px;
 }
 
+@media (max-width: 1024px) {
+  nav ul {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+}
