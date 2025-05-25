@@ -44,7 +44,7 @@ El CSS aplica efectes senzills, com la transició de color de fons en botons i e
 
 ### 4. Organització de fitxers
 
-El projecte està organitzat amb una carpeta `/css` per a tots els arxius d’estils CSS, i una carpeta `/images` per a les imatges. Dins d’aquesta carpeta hi ha tres subcarpetes per a les imatges de les tres regions: Europa, Amèrica i Àsia.
+El projecte està organitzat amb una carpeta `/css` per a tots els arxius d’estils CSS, i una carpeta `/images` per a les imatges. Dins d’aquesta carpeta hi ha tres subcarpetes per a les imatges de les tres regions: Europa, Amèrica i Àsia. I els archius html no els he possat en carpeta perque hem donaba errors que no sabia solucionar.
 
 ### 5. Contacte
 
