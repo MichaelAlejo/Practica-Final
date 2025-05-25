@@ -18,4 +18,7 @@
 Els efectes visuals que he utilitzat son: 
 - "Transition": Aquest esta a tots els archius que el que fa es que a la barra de navegacio quan pases per un punt o pagina aquest aplica una transicio en colors amb un aspecte animat y que no hi sigui instantani.
 - "Transform: Aquest l'he utilitzat a index.css per animar els botons de "el nostre cataleg" que envien a les pagines de les regions, aixo el que fa es que cuan el ratoli passa per el boto aquest puja.
-- "Hover": amplis en tot el projecte, ofereixen retroalimentació visual quan l'usuari interactua amb elements clicables.
+- "Hover": Aquest esta a tots el css de tot el projecte, aquest el que fa es cuan passes el cursor per la barra de navegacio de pagines hi tingui un efecte com canviar el color d'aquest.
+
+<h2>Decisions de disseny i raonaments.</h2>
+<p></p>
